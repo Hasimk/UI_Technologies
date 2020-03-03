@@ -1,0 +1,102 @@
+<!-- Pre formatting and coding in html-->
+
+<html>
+<head>
+<title>Html  Format</title>
+<style>
+h1{
+
+text-align:center;
+color:blue;
+
+}
+pre{
+border: 2px  solid red;
+width:30%;
+padding:10px;
+margin:10px;
+background:lightcyan;
+float:left;
+}
+span{
+ color:yellow;
+ background:red;
+}
+
+div{
+
+border:2px solid maroon;
+background:grey;
+height:300px;
+
+}
+.h2:hover{
+background:orange;
+border:2px dotted red;
+
+
+}
+
+</style>
+</head>
+<body bgcolor="LightBlue">
+<h1>Pre-formats and Coding-text</h1>
+<hr/>
+<div>
+<pre class="h2">
+<span>C-Lang</span>
+<code>
+#include&lt;stdio.h&gt;   
+int main(){    
+int number;    
+printf("enter a number:");    
+scanf("%d",number);    
+printf("cube of number is:%d ",number*number*number);    
+return 0;  
+}    
+
+</code>
+
+</pre>
+
+<pre class="h2">
+<span>Java-Lang</span>
+<code>
+public class JavaExceptionExample{  
+  public static void main(String args[]){  
+   try{  
+      //code that may raise exception  
+      int data=100/0;  
+   }catch(ArithmeticException e){System.out.println(e);}  
+   //rest code of the program   
+   System.out.println("rest of the code...");  
+  }  
+}  
+
+</code>
+
+</pre>
+
+<pre class="h2">
+<span>Python-Lang</span>
+<code>
+def func():  
+     print("We are in first function")  
+     def func1():  
+           print("This is first child function")  
+     def func2():  
+           print(" This is second child function")  
+     func1()  
+     func2()  
+func()   
+
+</code>
+
+</pre>
+
+
+</div>
+<br />
+<hr/>
+</body>
+</html>
