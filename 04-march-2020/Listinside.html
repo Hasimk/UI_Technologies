@@ -1,0 +1,67 @@
+<!--
+	Lists inside a Tables in HTML Webpage
+-->
+
+<html>
+	<head>
+		<title>HTML Tables</title>
+		<style>
+			table{
+				text-align:center;
+				border:2px Solid Blue;
+				margin:auto;
+				background:yellow;
+			}
+			caption{
+				border-left:2px Solid Blue;
+				border-right:2px Solid Blue;
+				border-top:2px Solid Blue;
+				background:cyan;
+				font-size:25px;
+			}
+			ul{
+				border:2px Solid Red;
+				margin-top:10px;
+				background:cyan;
+				color:red;
+			}	
+		</style>
+	</head>
+	<body bgcolor="LightYellow">
+	<h1>Lists inside Table in HTML Webpage</h1>
+	<hr />
+	<table border="1" width="240" height="" cellpadding="5" cellspacing="5">
+		<caption>Student-Data</caption>
+		<tr>
+			<th>RollNo</th>
+			<td>1001</td>
+		</tr>
+		<tr>
+			<th>Name</th>
+			<td>Sai</td>
+		</tr>
+		<tr>
+			<th>Course</th>
+			<td>CSE</td>
+		</tr>
+		<tr>
+			<th>Marks</th>
+			<td>
+				<ul>
+					<li>Sub1 : 60</li>
+					<li>Sub2 : 70</li>
+					<li>Sub3 : 80</li>
+				</ul>
+			</td>
+		</tr>
+		<tr>
+			<th>Total</th>
+			<td>210</td>
+		</tr>
+		<tr>
+			<th>Average</th>
+			<td>70.00%</td>
+		</tr>
+	</table>
+</body>
+</html>
