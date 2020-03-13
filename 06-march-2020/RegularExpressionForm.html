@@ -1,0 +1,50 @@
+<!--
+	Register-Form in HTML Webpage with Patter-matching
+-->
+
+<html>
+<head>
+	<title>Register-Form</title>
+	<style>
+		fieldset{
+			border:2px Solid Blue;
+			width:200px;
+			background-color:powderblue;
+		}
+		legend{
+			border:2px Solid Blue;
+			background-color:white;
+		}
+	</style>
+</head>
+<body bgcolor="lightyellow">
+<h1>Login Form in HTML webpage</h1>
+<hr />
+<fieldset>
+	<legend>Register-Page</legend>
+<form name="RegForm1" action="/Reg1.jsp" id="" method="">
+
+<label for="uname">Choose username(Email) : </label>
+<input type="text" id="uname" name="uname" value="" placeholder="Enter-Username" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Enter Proper Email Addr" required/>
+
+<br /><br />
+<label for="pwd">Password : </label>
+<input type="password" id="pwd" name="pwd" value="" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[$#%*&@]).{6,15}" title="Min 6 & Max 15 chars & 1 Upper & 1 Lower & 1 digit & 1 Sp.Char($#%*&@)" required/>
+
+<br /><br />
+<label for="repwd">Retype-Password : </label>
+<input type="password" id="repwd" name="repwd" value="" placeholder="Retype-Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[$#%*&@]).{6,15}" title="Min 6 & Max 15 chars & 1 Upper & 1 Lower & 1 digit & 1 Sp.Char($#%*&@)" required/>
+
+<br /><br />
+<label for="mobileno">Mobile : </label>
+<input type="text" id="mobileno" name="mobileno" value="" placeholder="Mobile Number" pattern="^([1-9]{1})([234789]{1})([0-9]{8})$" title="10-digit Number" required/>
+
+<br /><br />
+<input type="submit" name="Signup" value="Signup" />
+&ensp;
+<input type="reset" name="Reset" value="Reset" />
+
+</form>
+</fieldset>
+</body>
+</html>/

@@ -1,0 +1,86 @@
+==> Regular Expressions for pattern attr:-
+= They are used to match given pattern or string in html page
+= It is mainly useful for client-side HTML form-Input validations
+Ex:
+	pattern="regex"
+
+case-1: (Mobile-No)
+pattern="[0-9]{10}" title="Enter 10-digit Mobile-Number"
+
+case-2: (email)
+pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Enter Proper Email Addr"
+
+password: (1-dig/1-upper/1-lower)
+pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,15}" title="Min 6 & Max 15 chars & 1 Upper & 1 Lower & 1 digit"
+	
+Syntax:
+	/pattern/modifier
+	
+Ex1:
+	/uitech/i
+= It matches for "uitech" in given Input	
+= i indicates case-insensitive (upper/lower)
+
+=> Modifiers:-
+i (case-insensitive matching)
+g (global matching)
+m (multi-line matching)
+
+=> Pattern in Brackets:-
+[] (square) either of the pattern
+() (circle) indicates conditions or groupings
+Ex:
+[abc] it means any char in brackets
+[^abc] it means NOT any char in brackets (except "abc")
+(^ indicates NOT)
+
+Ex:
+[0-9] it means any digits from 0 to 9
+[^0-9] it means NOT any 0 to 9 (excepts digits) 
+
+Ex:
+(a|b) it means a or b char's
+
+=> Meta-Characters (Sp. Chars):-
+.  (single-char matching except new-line or end-of-line)
+\w (word)
+\W (non-word)
+\d (digit)
+\D (non-digit)
+\s (white-space)
+\S (non white-space)
+------------------------------
+\b (begin or end matching)
+\B (except begin or end matching)
+------------------------------
+\0 (NULL char)
+\n (new-line)
+\t (tab-space)
+-------------------------------
+\xxx (char in octal-number)
+\xdd (char in hexa-decimal-number)
+\uxxxx (Unicode char in hexa-decimal-no)
+
+
+=>Quantifiers:-
+(More than one matching)
+n+ (matches string with atleast 1 or more n)
+n* (matches string with n i.e, 0 or More)
+n? (matches string with n i.e, 0 or 1 only)
+n{X} (matches string with sequence of n)
+n{X,Y} (matches string with sequence of n from X to Y)
+n{X,} (matches string with sequence of n from X or more times)
+n$ (matches string with n at-the-end)
+^n (matches string with n at-the-begin)
+?=n (matches string specifically followed by n)
+?!n (matches string specifically not-followed by n)
+
+NOTE:
+= n means 1 or more char's
+= {X,Y} means X min-value & Y max-value
+
+Ex: (Pattern for password)
+pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[$#%*&@]).{6,15}"
+
+Ex: (Pattern for Mobile Number)
+pattern="^([1-9]{1})([234789]{1})([0-9]{8})$"

@@ -1,0 +1,52 @@
+<!--
+	Forms in HTML Webpage
+-->
+
+<html>
+	<head>
+		<title>HTML Form</title>
+		<style>
+			fieldset{
+				border:2px Solid Red;
+				border-radius:10px;
+				width:350px;
+				background:cyan;
+			}
+			legend{
+				border:2px Solid Red;
+				border-radius:5px;
+				background:yellow;
+			}
+			
+			#btn{
+			
+			border:2px solid red;
+			background-color:blue;
+			
+			
+			
+			}
+		</style>
+	</head>
+	<body bgcolor="LightYellow">
+	<h1>Forms in HTML Webpage</h1>
+	<hr />
+	<fieldset>
+		<legend>Login-Form</legend>
+		<form action="Login.jsp" name="f1" id="f1" method="get">
+		
+		<label for="uname">Enter Username :</label>
+		<input type="text" id="uname" name="uname" value="" placeholder="Username" required /><br/><br/>
+		
+		<input type="submit" id="btn" name="submit" value="Login" />
+		<br /><br />
+		<label for="pwd">Enter Password :</label>
+		<input type="password" id="pwd" name="pwd" value="" placeholder="Password" required />
+		
+		
+		<br /><br />
+		
+		</form>
+		</fieldset>
+	</body>
+</html>

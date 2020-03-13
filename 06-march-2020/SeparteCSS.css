@@ -1,0 +1,24 @@
+/*styles1.css*/
+
+p{				/* using tagname */
+	border:2px Solid Brown;
+	color:blue;
+}
+.c1{			/* using .classname */
+	text-align:center;
+	background-color:yellow;
+}
+.c2{			/* using .classname */
+	text-align:right;
+	background-color:lightpink;
+}
+.c3{
+	font-size:20px;
+}
+#p1{			/* using idname */
+	width:50%;
+}
+#p5{
+	width:80%;
+	margin:auto;
+}

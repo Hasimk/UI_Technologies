@@ -1,0 +1,77 @@
+<!--
+	Forms in HTML Webpage (Demo20.html)
+-->
+
+<html>
+<head>
+	<title>HTML Forms</title>
+</head>
+<body bgcolor="lightyellow">
+<h1>Forms in HTML webpage</h1>
+<hr />
+<fieldset>
+	<legend>Student Form</legend>
+	<form name="f1" action="Register.jsp" id="f1" method="post">
+	
+	<label for="fname">Enter Firstname : </label>
+	<input type="text" id="fname" name="fname" value="" placeholder="Firstname" required/>
+	&nbsp;&nbsp;
+	<label for="lname">Enter Lastname : </label>
+	<input type="text" id="lname" name="lname" value="" placeholder="Lastname" required/>
+	
+	<br /><br />
+
+	<label for="pwd">Enter Password : </label>
+	<input type="password" id="pwd" name="pwd" value="" placeholder="Password" required/>
+	&ensp;
+	<label for="repwd">Retype Password : </label>
+	<input type="password" id="repwd" name="repwd" value="" placeholder="Retype-Password" required/>
+
+	<br /><br />
+	<label for="gender">Gender : </label>
+	<input type="radio" name="gender" value="Male"/>Male
+	<input type="radio" name="gender" value="Female"/>Female
+	<input type="radio" name="gender" value="Trans"/>Trans
+	
+	&ensp;
+	<label for="ctry">Country : </label>
+	<select id="ctry" name="ctry" >
+		<option value="India">India</option>
+		<option value="USA">USA</option>
+		<option value="Canada">Canada</option>
+	</select>
+	
+	
+	<br /><br />
+	<label for="langs">Languages Known : </label>
+	<input type="checkbox" id="langs" name="langs" value="" >English
+	<input type="checkbox" id="langs" name="langs" value="" >Telugu
+	<input type="checkbox" id="langs" name="langs" value="" >Hindi
+	
+	<br /><br />
+	<label for="addr">Address : </label>
+	<textarea id="addr" name="addr" value="" placeholder="Enter Address" rows="6" cols="30"></textarea>
+	
+	<br /><br />
+	<label for="email">E-mail : </label>
+	<input type="email" id="email" name="email" value="" placeholder="Email Address"/>
+	&nbsp;&nbsp;
+	<input type="file" name="pic" style="border:2px dotted Red" required /> ("Max 5-MB Size")
+	
+	
+	<br /><br />
+	<input type="image" name="imgbtn" src="images/image1.jpg" width="44" height="30" style="border:2px solid red;" />
+
+	
+	<br /><br />
+	<input type="submit" name="submit" value="Submit" />
+	&ensp;
+	<input type="reset" name="reset"  value="Reset" />
+	&ensp;
+	<input type="button" name="ok" value="OK"  />
+
+	
+	</form>
+</fieldset>
+</body>
+</html>
